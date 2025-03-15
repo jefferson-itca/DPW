@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios: Ejemplo 1</title>
+</head>
+<body>
+    <a href="../index.html">Regresar</a>
+    <h2>Formularios: Ejemplo 1</h2>
+    <form method="get" action="#">
+        Registro de un Usuario
+        <br>
+        <br>
+        Nombre: <input type="text" name="txtNombre" 
+        id="txtNombre" placeholder="Nombre" required>
+        <br>
+        <br>
+        Apellido: <input type="text" name="txtApellido" 
+        id="txtApellido" placeholder="Apellido" required>
+        <br>
+        <br>
+        Contraseña: <input type="password" name="contrasenia" id="contrasenia">
+        <br>
+        <br>
+        Género:
+        <br>
+        Hombre: <input type="radio" name="genero" id="genero" value="M"><br>
+        Mujer: <input type="radio" name="genero" id="genero" value="F">
+        <br>
+        <br>
+        Ocupación:
+        <select name="ocupacion" id="ocupacion">
+            <option value="estudiante">Estudiante</option>
+            <option value="ingeniero">Ingeniero</option>
+            <option value="profesor">Profesor</option>
+            <option value="jubilado">Jubilado</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+        <br>
+        Fotografia: <input type="file" name="foto" id="foto" 
+        accept="image/png, image/jpeg, image/jpg">
+        <br>
+        <br>
+        Comentarios:
+        <textarea name="comentarios" id="comentarios" cols="30" 
+        rows="5" placeholder="Comentarios"></textarea>
+
+        <br><br><br>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
