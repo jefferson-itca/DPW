@@ -1,0 +1,26 @@
+a{
+    color: rgb(132, 187, 236);
+    text-decoration: none;
+}
+
+#titulo{
+    color: #0c0a22;
+    text-align: center;
+    font-size: 3em;
+}
+
+.parrafo1{
+    color: darkblue;
+    text-align: justify;
+    font-size: 2em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.parrafo2{
+    color: darkred;
+    text-align: center;
+    font-size: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+}

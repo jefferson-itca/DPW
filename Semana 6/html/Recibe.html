@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibiendo la información</title>
+</head>
+
+<body>
+    <h2>Datos Recibidos</h2>
+    <fieldset>
+        <legend><b>CUENTA DE USUARIO</b></legend>
+        <p><strong>Usuario: </strong><span id="usuario"></span></p>
+        <p><strong>Contrase&ntilde;a: </strong><span id="pass"></span></p>
+        <p><strong>Repetir Contrase&ntilde;a: </strong><span id="repepass"></span></p>
+    </fieldset>
+
+    <script>
+        //Obtener los parametros de la url
+        var params = new URLSearchParams(window.location.search);
+        console.log(params);
+    
+        //obtener valores de los inputs
+        var usuario = params.get("usuario") || "No ingresado";
+        var pass = params.get("pass") || "No ingresado";
+        var repepass = params.get("repepass") || "No ingresado";
+    
+        //Mostrar los datos en la pagina
+        document.getElementById("usuario").innerText = usuario;
+        document.getElementById("pass").innerText = pass;
+        document.getElementById("repepass").innerText = repepass;
+    </script>
+    
+</body>
+</html>

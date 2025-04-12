@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body bgcolor="#E2DFFB">
+    <h2><center>Ejemplo 1 de Formulario</center></h2>
+    <form action="./Recibe.html" method="get">
+        <center><img src="../images/fondo.jpg" alt="banner" width="600" ></center>
+        <h4>Completa la siguiente informacion para registrarte en 
+            Desarrolladores ITCA.com</h4>
+        <fieldset>
+            <legend><b>CUENTA DE USUARIO</b></legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" maxlength="15" 
+            minlength="4" autofocus="on" required autocomplete="off">
+            <br>
+            <br>
+            <label for="pass">Contrase&ntilde;a</label>
+            <input type="password" name="pass" id="pass" maxlength="15" minlength="8" required>
+            <br>
+            <br>
+            <label for="repepass">Repetir contrase&ntilde;a</label>
+            <input type="password" name="repepass" id="repepass" maxlength="15" minlength="8" required>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend><b>INFORMACI&Oacute;N PERSONAL DE CONTACTO</b></legend>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" maxlength="15" minlength="4" required
+            placeholder="Nombre" autocomplete="on">
+            <br>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" maxlength="15" minlength="4" required
+            placeholder="Apellido" autocomplete="on">
+            <br>
+            <br>
+            <label for="foto">Fotograf&iacute;a:</label>
+            <input type="file" name="foto">
+            <br>
+            <br>
+            <label for="genero">Genero</label>
+            <input type="radio" name="genero" value="masculino" checked="checked">Masculino
+            <input type="radio" name="genero" value="femenino">Femenino
+            <br>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" min="18" max="110" required>
+            <br>
+            <br>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" name="fecha">
+            <br>
+            <br>
+            <label for="nivel">Nivel de escolaridad:</label>
+            <input list="nivel" required>
+            <datalist id="nivel">
+                <option value="Bachiller"></option>
+                <option value="Técnico"></option>
+                <option value="Licenciado"></option>
+                <option value="Ingeniero"></option>
+            </datalist>
+            <br>
+            <br>
+            <label for="depa">Departamento</label>
+            <input list="depa" required>
+            <datalist id="depa">
+                <option value="Ahuachapan">Ahuachapan</option>
+                <option value="San Salvador">San Salvador</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Santa Ana">Santa Ana</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="La Paz">La Paz</option>
+            </datalist>
+            <br>
+            <br>
+            <label for="dir">Direci&oacute;n</label>
+            <textarea name="dir" cols="50" rows="5" 
+            placeholder="Escribe tu dirección"required></textarea>
+            <br>
+            <br>
+            <label for="tel">Tel&eacute;fono</label>
+            <input type="tel" name="tel"
+            placeholder="(000) 0000-0000">
+            <br>
+            <br>
+            <label for="color">Color Favorito:</label>
+            <input type="color" name="color">
+            <br>
+            <br>
+            <label for="url">P&aacute;gina personal:</label>
+            <input type="url" name="url" placeholder="Digite la url">
+            <br>
+            <br>
+            <p>Selecciona tus intereses:</p>
+            <label>
+                <input type="checkbox" name="opciones" value="deporte">Deporte
+                <input type="checkbox" name="opciones" value="musica">Música
+                <input type="checkbox" name="opciones" value="Programacion">Programación
+            </label>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;<input type="submit" value="Enviar"> 
+        &nbsp;&nbsp;&nbsp;<input type="reset" value="Cancelar">
+        <br>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

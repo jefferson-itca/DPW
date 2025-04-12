@@ -1,0 +1,102 @@
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* menu */
+nav{
+    background-color: #333333;
+    color: white;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+/* encabezado */
+header{
+    background-color: #67271a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* cuerpo de la pagina */
+.main{
+    display: flex;
+}
+
+/*publicidad */
+aside{
+    width: 20%;
+    background-color: #e6e6e6;
+    padding: 1rem;
+    text-align: center;
+}
+
+aside img{
+    max-width: 100%;
+}
+
+/* contenido */
+section{
+    width: 80%;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+/* entrada de contenido */
+article{
+    background-color: #ffc0a9;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #c2806b;
+}
+
+.card-img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 1rem;
+    color: #67271a;
+}
+
+.card-text{
+    font-size: 1rem;
+    margin: 0 0 0.5rem 1rem;
+    color: #470a00;
+}
+
+footer{
+    background-color: #333333;
+    color: white;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
