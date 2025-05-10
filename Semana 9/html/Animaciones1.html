@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones 1</title>
+    <style type="text/css">
+        p{
+            color: darkblue;
+            font-size: 30px;
+            animation-name: miAnimacion2;
+            animation-duration: 3s;
+        }
+
+        @keyframes miAnimacion{
+            from{
+                margin-left: 100%;
+                font-size: 60px;
+                color: darkred;
+            }
+            to{
+                margin-left: 0%;
+                font-size: 30px;
+                color: darkgreen;
+            }
+        }
+
+        @keyframes miAnimacion2{
+            0%{
+                margin-left: 100%;
+                font-size: 60px;
+                color: darkred;
+            }
+            50%{
+                margin-left: 50%;
+                font-size: 30px;
+                color: darkgoldenrod;
+            }
+            100%{
+                margin-left: 0%;
+                font-size: 10px;
+                color: darkgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Animaciones 1</h2>
+    <p>Este parrafo se deslizara a lo ancho del navegador</p>
+</body>
+</html>

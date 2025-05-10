@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script>
+        let numero
+        numero = prompt("digite un numero del 1 al 7")
+        //convertimos a int
+        numero = parseInt(numero);
+
+        switch (numero) {
+            case 1:
+                alert("Dia Lunes");
+                break;
+
+            case 2:
+                alert("Dia Martes");
+                break;
+
+            case 3:
+                alert("Dia Miercoles");
+                break;
+
+            case 4:
+                alert("Dia Jueves");
+                break;
+
+            case 5:
+                alert("Dia Viernes");
+                break;
+
+            case 6:
+                alert("Dia Sabado");
+                break;
+
+            case 7:
+                alert("Dia Domingo");
+                break;
+        
+            default:
+                alert("Seleccion no valida")
+                break;
+        }
+    </script>
+</head>
+<body>
+    <h2>Switch</h2>
+</body>
+</html>

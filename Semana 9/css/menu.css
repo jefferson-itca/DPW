@@ -1,0 +1,50 @@
+.card{
+    width: 30%;
+    height: 450px;
+    background-color: #1E2B32;
+}
+
+.titulo{
+    padding: 5px;
+    background-color: #2A3942;
+}
+
+h1{
+    color: #FFF;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+li{
+    transition: 0.5s all;
+    font-size: 1.1em;
+    padding: 15px;
+    margin-left: -40px;
+    list-style: none;
+    margin-top: 0%;
+    color: #FFF;
+}
+
+.cuerpo li:hover{
+    transition: 0.5s all;
+    color: #2f89fc;
+    cursor: pointer;
+    background-color: #2a3942be;
+}
+
+.cuerpo li ul {
+    background: #1E2B32;
+    margin-left: 13.5em;
+    margin-top: -37px;
+    display: none;
+    position: absolute;
+}
+
+.cuerpo li:hover>ul{
+    display: block;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
